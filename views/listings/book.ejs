@@ -1,0 +1,26 @@
+<% layout("/layout/boilerplate.ejs") -%>
+
+<h2>Book: <%= listing.title %></h2>
+
+<form action="/listings/<%=listing._id%>/book" method="POST">
+  
+ 
+
+  <div  class="mb-3">
+    <label for="price">Price per stay:</label>
+    <input type="text" id="price" name="totalPrice" value="<%= listing.price %>" readonly>
+  </div>
+
+  <div  class="mb-3">
+    <label for="startDate">Start Date:</label>
+    <input type="date" name="startDate" required>
+  </div>
+
+  <div  class="mb-3">
+    <label for="endDate">End Date:</label>
+    <input type="date" name="endDate" required>
+  </div>
+
+  <button type="submit" class="btn btn-success">Confirm Booking</button>
+</form>
+
