@@ -16,7 +16,7 @@ router.get("/listings/:id/book", isLoggedIn, async (req, res) => {
     } catch (e) {
         console.error(e);
         req.flash("error", "Something went wrong");
-        res.redirect("/listings");
+        return res.redirect("/listings");
     }
 });
 
