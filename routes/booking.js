@@ -41,11 +41,11 @@ router.post("/listings/:id/book", isLoggedIn, async (req, res) => {
 
         await booking.save();
         req.flash("success", "Booking confirmed!");
-        res.redirect(`/listings/${listing._id}`);
+        return res.redirect(`/listings/${listing._id}`);
     } catch (e) {
         console.error("Booking error:", e);
         req.flash("error", "Failed to book. Please try again.");
-        res.redirect("/listings");
+        return res.redirect("/listings");
     }
 });
 
