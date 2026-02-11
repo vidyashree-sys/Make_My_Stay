@@ -10,13 +10,13 @@ router.get("/listings/:id/book", isLoggedIn, async (req, res) => {
         const listing = await Listing.findById(req.params.id);
         if (!listing) {
             req.flash("error", "Listing not found");
-            return res.redirect("/listings");
+           res.redirect("/listings");
         }
         res.render("listings/book", { listing });
     } catch (e) {
         console.error(e);
         req.flash("error", "Something went wrong");
-        return res.redirect("/listings");
+         res.redirect("/listings");
     }
 });
 
@@ -26,7 +26,7 @@ router.post("/listings/:id/book", isLoggedIn, async (req, res) => {
         const listing = await Listing.findById(req.params.id);
         if (!listing) {
             req.flash("error", "Listing not found");
-            return res.redirect("/listings");
+           res.redirect("/listings");
         }
 
         const { startDate, endDate, totalPrice} = req.body;
@@ -41,11 +41,11 @@ router.post("/listings/:id/book", isLoggedIn, async (req, res) => {
 
         await booking.save();
         req.flash("success", "Booking confirmed!");
-        return res.redirect(`/listings/${listing._id}`);
+      res.redirect(`/listings/${listing._id}`);
     } catch (e) {
         console.error("Booking error:", e);
         req.flash("error", "Failed to book. Please try again.");
-        return res.redirect("/listings");
+       res.redirect("/listings");
     }
 });
 
