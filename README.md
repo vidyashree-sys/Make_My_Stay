@@ -1,38 +1,55 @@
-# 🏨 Make My Stay
+🏨 Make My Stay – Full Stack Airbnb Clone
 
-Make My Stay is a full-stack web application inspired by Airbnb that allows users to explore stays, view details, and manage bookings.  
-The project focuses on backend development, database design, and dynamic UI rendering.
+Make My Stay is a full-stack web application inspired by Airbnb that allows users to explore stays, view detailed listings, and manage bookings.
+
+This project demonstrates strong backend development, database integration, RESTful routing, authentication, and deployment skills.
+---
+🚀 Live Demo
+
+🔗 Live Application: https://make-my-stay.onrender.com
+
+🔗 GitHub Repository:https://github.com/vidyashree-sys/Make_My_Stay.git
 
 ---
 
-## 🚀 Features
+✨ Key Features
 
-- User authentication (Signup & Login)
-- Browse available stays
-- View stay details with multiple images
-- Create and manage bookings
-- CRUD operations for listings
-- MongoDB database integration
-- Responsive UI using EJS
+🔐 User Authentication (Signup & Login)
+
+🖼️ Multiple image support for listings
+
+📄 Detailed listing page
+
+📅 Booking functionality
+
+✏️ Full CRUD operations for listings
+
+🗄️ MongoDB Atlas integration
+
+🌍 Deployed on Render
+
+📱 Responsive UI using EJS templating
 
 ---
 
-## 🛠️ Tech Stack
-
-**Frontend**
+🛠️ Tech Stack
+Frontend
 - HTML
 - CSS
 - JavaScript
-- EJS
+- EJS (Server-side rendering)
 
-**Backend**
+Backend
 - Node.js
 - Express.js
 
-**Database**
-- MongoDB
-- Mongoose
+Database
+- MongoDB Atlas
+- Mongoose ODM
 
+Deployment
+- Render (Backend Hosting)
+- MongoDB Atlas (Cloud Database)
 ---
 
 ## 📸 Project Output Screenshots
@@ -67,18 +84,24 @@ http://localhost:3002
 
 ---
 
-❌ Deployment Status
+📌 What I Learned
 
-This project is not deployed yet.
-The source code is available for review.
-
+- Structuring a full-stack MVC architecture
+- Implementing authentication and session handling
+- Managing environment variables for production
+- Deploying backend applications on Render
+- Debugging production errors
+- Working with MongoDB Atlas cloud database
 ---
 
 👩‍💻 Author
 
 Vidyashree S
 Full-Stack Developer
+🔗 LinkedIn:[ https://www.linkedin.com/in/your-linkedin-username/](https://www.linkedin.com/in/vidyashree-biradar-90b246360/)
 
+🔗 GitHub:[ https://github.com/your-username
+](https://github.com/vidyashree-sys)
 
 
 
